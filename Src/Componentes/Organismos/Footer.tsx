@@ -44,10 +44,30 @@ function Footer() {
                 <div className="pie-col">
                     <h3>Descubre</h3>
                     <ul>
-                    <li><a href="#gastronomia"><FaUtensils /> Gastronomía</a></li>
-                    <li><a href="#galeria"><FaImages /> Galería</a></li>
-                    <li><a href="#consejos"><FaPlane /> Antes de viajar</a></li>
-                    <li><Link to="/vuelo"><FaCalendar /> Reservar vuelo</Link></li>
+                        <li>
+                            <Link to = '/Gastronomia'>
+                                <FaUtensils /> 
+                                Gastronomía
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to = '/Galeria'>
+                                <FaImages /> 
+                                Galería
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to = '/Viajar'>
+                                <FaPlane /> 
+                                Antes de viajar
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/Vuelo">
+                                <FaCalendar /> 
+                                Reservar vuelo
+                            </Link>
+                        </li>
                     </ul>
                 </div>
 
@@ -64,7 +84,7 @@ function Footer() {
 
                 <div className="pie-abajo">
                 <span>Creado por Isam Mejias / Proy Fullstack II</span>
-                <span>Sección 001D / React [&gt;_&lt;]</span>
+                <span>Sección 001D / React</span>
                 </div>
 
             </div>

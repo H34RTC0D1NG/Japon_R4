@@ -10,7 +10,8 @@ html {
 } .Banner {
 
     width : 100%;
-    height : 100vh;
+    height : 100%;
+    object-fit : cover;
 
 } .btn {
 
@@ -18,7 +19,7 @@ html {
     align-items : center;
     gap : 8px;
     padding : 14px 28px;
-    border-radius : 999px;
+    border-radius : 5px;
     font-size : 14px;
     font-weight : 600;
     text-decoration : none;
@@ -51,6 +52,11 @@ html {
 
     background : rgba(247, 243, 234, .08);
     border-color : #F7F3EA;
+
+} .btn a {
+
+    color : inherit;
+    text-decoration : none;
 
 } .navbar.bg-dark {
 
