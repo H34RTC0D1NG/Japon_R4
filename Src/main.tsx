@@ -1,7 +1,10 @@
 import { BrowserRouter } from 'react-router-dom'
 import { createRoot } from 'react-dom/client'
 import { StrictMode } from 'react'
-import App from '../Src/App'
+
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+import App from './App'
 
 createRoot(document.getElementById('root')!).render(
 
@@ -11,4 +14,4 @@ createRoot(document.getElementById('root')!).render(
     </BrowserRouter>
   </StrictMode>,
 
-)
+) 

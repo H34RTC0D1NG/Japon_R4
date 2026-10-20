@@ -1,8 +1,9 @@
-import '../../Css/Animaciones/Scroll.css'
+import '../../Css/Animaciones/Desplazate.css'
+import '../../Css/Global/General.css'
 
 function Desplazate() {
     return (
-        <span className = 'scroll'>
+        <span className = 'Scroll'>
             Desplázate
         </span>
     )

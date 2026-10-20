@@ -1,5 +1,6 @@
-import '../../Css/Complementos/Explorar.css'
 import { Link } from "react-router-dom"
+import '../../Css/Botones/Explorar.css'
+import '../../Css/Global/General.css'
 
 function Explorar() {
     return (

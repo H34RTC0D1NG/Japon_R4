@@ -1,28 +1,39 @@
-import Navbar from '../Src/Componentes/Organismos/Navbar'
-import Footer from '../Src/Componentes/Organismos/Footer'
+import Navbar from './Componentes/Organismos/Navbar'
+import Footer from './Componentes/Organismos/Footer'
+
 import { Routes, Route } from 'react-router-dom'
-import Inicio from './Paginas/Primaria/Inicio'
+
+import Estaciones from './Paginas/Estaciones'
+import Galeria from './Paginas/Galeria'
+import Inicio from './Paginas/Inicio'
+
+import './Css/Global/General.css'
 
 function App() {
+    return (
+        <>
 
-  return (
-    <>
-      
-      <Navbar />
+            <Navbar />
 
-      <Routes>
+            <Routes>
 
-        <Route 
-          path = '/'
-          element = {<Inicio />}
-        />
+                <Route 
+                    path = '/'
+                    element = {<Inicio />}
+                />
+                <Route 
+                    path = '/Estaciones'
+                    element = {<Estaciones />}
+                />
+                <Route 
+                    path = '/Galeria'
+                    element = {<Galeria />}
+                />
 
-      </Routes>
+            </Routes>
 
-      <Footer />
+            <Footer />
 
-    </>
-  )
-}
-
-export default App
+        </>
+    )
+} export default App

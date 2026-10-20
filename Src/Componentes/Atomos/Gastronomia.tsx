@@ -1,4 +1,4 @@
-import '../../Css/Complementos/Gastronomia.css'
+import '../../Css/Botones/Gastronomia.css'
 import { Link } from "react-router-dom"
 
 function Gastronomia() {
