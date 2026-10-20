@@ -1,0 +1,28 @@
+.petalo {
+
+    position : absolute;
+    z-index : 1;
+    top : -5%;
+    background : linear-gradient(135deg, #ffc8d4, #ff8fa6);
+    border-radius : 150% 0 150% 0;
+    opacity : .75;
+    animation : caer linear infinite;
+    pointer-events : none;
+
+} @keyframes caer {
+
+    from {
+
+        transform : translate(0, -10vh) rotate(0deg);
+
+    } 50% {
+
+        transform : translate(60px, 55vh) rotate(260deg);
+
+    } to {
+
+        transform : translate(-30px, 115vh) rotate(540deg);
+
+    }
+
+} 

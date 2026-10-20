@@ -1,0 +1,33 @@
+.btn {
+
+    display : inline-block;
+    align-items : center;
+    gap : 8px;
+    padding : 14px 28px;
+    border-radius : 3px;
+    font-size : 14px;
+    font-weight : 600;
+    text-decoration : none;
+    border : 1px solid transparent;
+    cursor : pointer;
+    transition : transform .2s ease,    background .2s ease,
+                 border-color .2s ease, box-shadow .2s ease;
+
+} .btn:hover {
+
+    margin-top : 5px 1s;
+
+} .btn-rojo {
+
+    border : 2px solid white;
+    border-radius : 2px;
+    background : red;
+    color : #fff;
+    box-shadow : 0 10px 30px rgba(188, 58, 42 .4);
+
+} .btn-rojo:hover {
+
+    background : #8F2A1E;
+    border : 2px solid grey;
+
+}

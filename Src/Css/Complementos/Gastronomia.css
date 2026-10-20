@@ -1,0 +1,12 @@
+.btn-borde {
+
+    border-color : rgba(247, 243, 234, .35);
+    backdrop-filter : blur(6px);
+    color : #F7F3EA;
+
+} .btn-borde:hover {
+
+    background : rgba(247, 243, 234, .08);
+    border-color : #F7F3EA;
+
+}
