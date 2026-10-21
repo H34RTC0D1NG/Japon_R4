@@ -1,9 +1,9 @@
 // Importando Componentes o Paginas
 
-import Gastronomia from '../Componentes/Atomos/Gastronomia'
-import Desplazate from '../Componentes/Atomos/Desplazate'
-import Explorar from '../Componentes/Atomos/Explorar'
-import Cerezo from '../Componentes/Atomos/Cerezo'
+import Gastronomia from '../Componentes/Atomos/Botones/Gastronomia'
+import Desplazate from '../Componentes/Atomos/Animaciones/Desplazate'
+import Explorar from '../Componentes/Atomos/Botones/Explorar'
+import Cerezo from '../Componentes/Atomos/Animaciones/Cerezo'
 
 // Importando CSS
 
@@ -16,7 +16,7 @@ function Inicio() {
             <Cerezo />
             <div className = 'wrap contenido'>
                     
-                <p className = 'etiqueta'> El Pais De Las Maravillas </p>
+                <p className = 'etiqueta'> El Pais De Los Sueños </p>
 
                 <h1 className = 'titulo'>
                     <span style = {{ display: 'inline-block', marginRight: '0.25em'  }}>Tokio</span>
@@ -25,7 +25,8 @@ function Inicio() {
                 </h1>
 
                 <p className = 'sub'>
-                    La ciudad que cambia la perspectiva de mucha gente con su cultura o dominio.
+                    La ciudad que cambia la perspectiva de mucha gente con Su Cultura, Su Comida, Su Arte, 
+                    Sus Historias, Sus Paisajes, Su Gente y muchas más como los diferentes lados de Japón.
                 </p>
         
                 <div className = 'acciones'>

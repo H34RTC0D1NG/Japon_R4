@@ -1,0 +1,133 @@
+.caja {
+
+    margin : 4%;
+
+} .card_article {
+
+    position : relative;
+    overflow : hidden;
+
+} .card_img {
+
+    border : 3px solid white;
+    width : 328px;
+    height : 340px;
+    border-radius : 2px;
+
+} .card_data {
+
+    width : 280px;
+    background : white;
+    padding : 1.5rem 2rem;
+    border-radius : 3px;
+    position : absolute;
+    bottom : -9rem;
+    left : 0;
+    right : 0;
+    margin-inline : auto;
+    opacity : 0;
+    transition : opacity 1s 1s;
+
+} .card_description {
+
+    color : grey;
+    font-size : 15px;
+    margin-bottom : 3px;
+
+} .card-title {
+
+    font-size : 1rem;
+    font-weight : 400;
+    color : black;
+    margin-bottom : .75rem;
+
+} .card_article:hover .card_data {
+
+    animation : show_data 1s forwards;
+    opacity : 1;
+    transition : opacity .3s;
+
+} .card_article:hover {
+
+    animation : remove_overflow 2s forwards;
+
+} .card_article:not(:hover) {
+
+    animation : show_overflow 2s forwards;
+
+} .card_article:not(:hover) .card_data {
+
+    animation : remove_data 1s forwards;
+
+} @keyframes show_data {
+
+    50% {
+
+        transform: translateY(-10rem);
+
+    } 100% {
+
+        transform: translateY(-7rem);
+
+    }
+
+} @keyframes remove_overflow {
+
+    to {
+
+        overflow : initial;
+
+    }
+
+} @keyframes remove_data {
+    
+    0% {
+
+        transform : translateY(-7rem);
+
+    } 50% {
+
+        transform : translateY(-10rem);
+
+    } 100% {
+
+        transform : translateY(.5rem);
+
+    }
+
+} @keyframes show_overflow {
+
+    0% {
+
+        overflow : initial;
+        pointer-events : none;
+
+    } 50% {
+
+        overflow : hidden;
+
+    }
+
+} @media (min-width : 340px) {
+
+    .card_data {
+
+        width : 250px;
+        padding : 1rem;
+
+    }
+
+} @media (min-width : 1120px) {
+
+    .card_img {
+
+        width : 348px;
+
+    } .card_data {
+
+        width : 316px;
+        padding-inline : 2.5rem;
+
+    }
+ 
+}

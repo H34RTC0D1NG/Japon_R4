@@ -50,7 +50,7 @@ function Estaciones() {
                 </div>
                 <div className = 'media'>
                     <Imagenes
-                        Imagen = {'https://drive.google.com/thumbnail?id=1Wj4bbg-7ul70mQ6IWYAkEnRxAp80x8Ot&sz=w1000'}
+                        Imagen = {'../../../Public/Fondos/Fondo_15.jpeg'}
                         Titulo = {'Estacion'}
                     />
                     <span className = 'etiqueta-marco'>Momiji, El Otoño Japonés</span>

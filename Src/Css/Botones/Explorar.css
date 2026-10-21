@@ -1,4 +1,4 @@
-.btn-rojo {
+.rojo {
 
     border : 2px solid white;
     border-radius : 2px;
@@ -6,9 +6,10 @@
     color : #fff;
     box-shadow : 0 10px 30px rgba(188, 58, 42 .4);
 
-} .btn-rojo:hover {
+} .rojo:hover {
 
     background : #8F2A1E;
     border : 2px solid grey;
+    transition : 1s;
 
 }

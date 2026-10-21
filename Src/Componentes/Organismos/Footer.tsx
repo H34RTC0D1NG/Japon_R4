@@ -40,8 +40,18 @@ function Footer() {
                     <div className="pie-col">
                         <h3>Explorar</h3>
                         <ul>
-                        <li><a href="#japon"><FaToriiGate /> Japón en una mirada</a></li>
-                        <li><a href="#estacion"><FaCloudSun /> Las cuatro estaciones</a></li>
+                            <li>
+                                <Link to = '/'> 
+                                    <FaToriiGate /> 
+                                    Japón en una Mirada 
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to = '/Estaciones'>
+                                    <FaCloudSun /> 
+                                    Las Cuatro Estaciones
+                                </Link>    
+                            </li>
                         </ul>
                     </div>
 

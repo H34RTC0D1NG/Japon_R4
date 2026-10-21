@@ -1,6 +1,6 @@
+import Img from '../Componentes/Moleculas/Galeria'
 import { FaPersonHiking } from 'react-icons/fa6'
-import Img from '../Componentes/Moleculas/Img'
-import '../Css/Seccion_3.css'
+import '../Css/Paginas/Galeria.css'
 
 function Galeria() {
     return (
@@ -11,9 +11,17 @@ function Galeria() {
                         <FaPersonHiking /> De la Costa a la Montaña
                     </p>
                     <h2 className = 'titulo'>Galeria</h2>
-                    <p className = 'texto'>
-                        Una muestra de paisajes y lugares que japon tiene para ofrecer.
-                    </p>
+                    <p className = 'texto'><strong>
+                        Si estás pensando en viajar a Japón, te recomiendo empezar por Tokio. De noche, sus rascacielos iluminados se ven infinitos, 
+                        y la Torre de Tokio, con su estructura roja y blanca, es casi obligatoria para la foto. En primavera, el río Meguro se cubre 
+                        con un túnel de cerezos en flor que se refleja en el agua cuando cae la noche. Si buscas calma, el bosque de bambú de Arashiyama, 
+                        en Kioto, te envuelve en un silencio verde difícil de olvidar, y sus senderos con cercas de bambú parecen sacados de otra época. 
+                        Tampoco puedes perderte el monte Fuji al atardecer, cuando su cima se tiñe de rosa sobre un mar de montañas azules, ni el castillo 
+                        de Matsumoto iluminado de noche, reflejado en el agua de su foso como un espejo. Y para conocer el Japón más tranquilo, vale la pena 
+                        salir de las grandes ciudades: costas con rocas en forma de arco frente al mar, puentes gigantes como el Akashi Kaikyō, y pueblos pequeños 
+                        con calles angostas, cables cruzando el cielo y cerros de fondo, donde se siente la vida cotidiana. Japón mezcla como pocos lugares la ciudad 
+                        moderna, la naturaleza y la tradición.
+                    </strong></p>
                 </div>
 
                 <div className = 'galeria'>

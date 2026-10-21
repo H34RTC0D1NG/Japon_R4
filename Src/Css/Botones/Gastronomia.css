@@ -1,12 +1,24 @@
-.btn-borde {
+.borde {
 
-    border-color : rgba(247, 243, 234, .35);
-    backdrop-filter : blur(6px);
-    color : #F7F3EA;
+    width : 16%;
+    position : relative;
+    padding : 10px 22px;
+    background : #7d2ae8;
+    border-radius : 3px;
+    border : 2px solid white;
+    cursor : pointer;
+    transition : transform 0.2s ease;
+    box-shadow : 0 5px 10px rgba(0, 0, 0, 0.1);
 
-} .btn-borde:hover {
+} .borde a {
 
-    background : rgba(247, 243, 234, .08);
-    border-color : #F7F3EA;
+    font-weight : 400;
+    text-decoration : none;
+    color : #fff;
 
-} 
+} .borde:hover {
+
+    transform : translateY(-5px);
+    transition : 0.7s;
+
+}

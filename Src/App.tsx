@@ -3,7 +3,9 @@ import Footer from './Componentes/Organismos/Footer'
 
 import { Routes, Route } from 'react-router-dom'
 
+import Gastronomia from './Paginas/Gastronomia'
 import Estaciones from './Paginas/Estaciones'
+import Contacto from './Paginas/Contacto'
 import Galeria from './Paginas/Galeria'
 import Inicio from './Paginas/Inicio'
 
@@ -28,6 +30,16 @@ function App() {
                 <Route 
                     path = '/Galeria'
                     element = {<Galeria />}
+                />
+
+                <Route 
+                    path = '/Gastronomia'
+                    element = {<Gastronomia />}
+                />
+
+                <Route 
+                    path = '/Contacto'
+                    element = {<Contacto />}
                 />
 
             </Routes>

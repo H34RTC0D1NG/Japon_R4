@@ -1,0 +1,66 @@
+.temporal {
+
+    padding : 120px 0;  
+    background : url(../../Public/Fondos/Fondo_5.jpg);
+    background-repeat : no-repeat;
+    background-size : cover;
+    background-position : center;
+
+} .galeria {
+
+    columns : 4 260px;
+    column-gap : 14px;
+
+} .item {
+
+    break-inside : avoid;
+    margin-bottom : 14px;
+
+} .item img {
+
+    border : 3px solid #fff;
+    display : block;
+    width : 100%;
+    border-radius : 3px;
+
+} .wrap {
+
+    max-width : 1180px;
+    margin : 0 auto;
+    padding : 0 20px;
+
+} .encabezado {
+
+    max-width : 1000px;
+    margin : 0 auto 56px;
+    text-align : center;
+
+} .etiqueta {
+
+    display : flex;
+    align-items : center;
+    gap : 9px;
+    font-size : 13.5px;
+    color : #fff;
+    margin-bottom : 14px;
+    font-weight : 600;
+
+} .encabezado .etiqueta {
+
+    justify-content : center;
+
+} .titulo {
+
+    font-size : clamp(32px, 4.2vw, 50px);
+    color : white;
+
+} .texto {
+
+    width : 100%;
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align : justify;
+    color : white;
+    font-size : 17px;
+
+}

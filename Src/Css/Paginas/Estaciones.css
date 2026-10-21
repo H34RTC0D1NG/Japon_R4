@@ -2,7 +2,7 @@
 
     padding : 100px 0;
     scroll-margin-top : 80px;
-    background : url(../../Public/Fondo\ 2.jpg);
+    background : url(../../Public/Fondos/Fondo_2.jpg);
     background-repeat : no-repeat;
     background-size : cover;
 
@@ -25,13 +25,15 @@
     font-family : 'Fraunces', Georgia, serif;
     font-weight : 500;
     font-size : clamp(32px, 4.2vw, 50px);
+    text-align : left;
     line-height : 1.06;
-    color : #1B1720;
+    color : white;
     margin : 0;
 
 } #Estacion .texto p {
 
-    color : black;
+    text-align : justify;
+    color : white;
     font-size : 16.5px;
 
 } #Estacion .titulo + p {
@@ -47,13 +49,13 @@
 
 } #Estacion .chip {
 
-    border : 2px solid black;
+    border : 2px solid white;
     display : flex;
     flex-direction : column;
     align-items : center;
     text-align : center;
     padding : 16px 8px;
-    background : #fff;
+    background : #000;
     border-radius : 5px;
     box-shadow : 0 6px 20px rgba(27, 23, 32, .07);
 
@@ -64,7 +66,7 @@
 
 } #Estacion .chip strong {
 
-    color : black;
+    color : white;
     margin-top : 12px;
     font-size : 14px;
 

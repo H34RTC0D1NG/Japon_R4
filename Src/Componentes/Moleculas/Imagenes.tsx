@@ -1,6 +1,8 @@
 interface ImgProp {
+
     Imagen : string;
     Titulo : string;
+    
 }
 
 function Imagenes({ Imagen, Titulo } : ImgProp) {
