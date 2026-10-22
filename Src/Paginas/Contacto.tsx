@@ -45,7 +45,7 @@ function Contacto() {
                 <div className = 'contacto_marco'>
                     <Formulario />
                     <span className = 'contacto_etiqueta'>
-                        Escribeme y Te Respondo Pronto ...
+                        Escribeme y Te Respondo Pronto
                     </span>
                 </div>
             </div>
