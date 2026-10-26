@@ -30,6 +30,9 @@ function Vuelo() {
             </div>
 
             <div className = 'vuelos'>
+                <div className = 'tbn'>
+                    <h1 className = 'titulo_1'>Reserva Tu Vuelo</h1>
+                </div>
                 <div className = 'cartas'>
                     <CardVuelo 
                         ID = {1}
