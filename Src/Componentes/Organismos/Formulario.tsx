@@ -69,7 +69,8 @@ function Formulario() {
             <button type = 'submit' className = 'btn btn-primary'>
                 Enviar Mensaje
             </button>
-
+            
         </form>
+
     )
 } export default Formulario

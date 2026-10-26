@@ -1,0 +1,242 @@
+.vuelos {
+
+    background : #000;
+
+} .vuelo {
+
+    position : relative;
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    width : 100%;
+    height : 100vh;
+    background : url('../../../Public/Fondos/Fondo_23.jpg');
+    overflow : hidden;
+    background-repeat : no-repeat;
+    background-position : center;
+    background-size : cover;
+
+} .contenido {
+
+    position : relative;
+    z-index : 2;
+    width : 100%;
+    max-width : 1200px;
+    margin : 0 auto;
+    padding : 0 6%;
+
+} .etiqueta {
+
+    font-family : 'Times New Roman', Times, serif;
+    display : flex;
+    align-items : center;
+    gap : 10px;
+    font-size : 14px;
+    color : white;
+    margin-bottom : 18px;
+
+} .etiqueta::before {
+
+    content : '';
+    width : 30px;
+    height : 2px;
+    background : #BC3A2A;
+
+} .titulo {
+
+    font-family : 'Courier New', Courier, monospace;
+    font-size : 90px;
+
+} .titulo span {
+
+    display : inline-block;
+    margin-right : .25em;
+
+} .parrafo {
+
+    font-family : 'Times New Roman', Times, serif;
+    text-align : justify;
+    max-width : 1000px;
+    font-size : 17px;
+    color : #fff;
+    margin-top : 20px;
+
+} .apartado {
+
+    padding : 50px;
+    width : 100%;
+    height : 150vh;
+    background : url('../../../Public/Fondos/Fondo_2.jpg');
+    background-repeat : no-repeat;
+    background-size : cover;
+    background-position : center;
+
+} .vuelo_form {
+
+    display : flex;
+    flex-direction : column;
+    max-width : 480px;
+    margin : 40px auto;
+    padding : 0;  
+    background : white;
+    border-radius : 4px;
+    box-shadow : 0 20px 50px rgba(15, 40, 80, .18);
+    overflow : hidden;
+    font-family : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation : aparecer .6s ease;
+
+} .vuelo_etiqueta {
+
+    order : -1;
+    display : block;
+    padding : 28px 30px;
+    background : linear-gradient(135deg, #0b3d91 0%, #1e6fd9 60%, #4fb3ff 100%);
+    color : #fff;
+    font-size : 1.6rem;
+    font-weight : 700;
+    letter-spacing : 1px;
+    text-align : center;
+    text-transform : uppercase;
+    position : relative;
+
+} .vuelo_etiqueta::before {
+
+    content : 'Reserva';
+    display : block;
+    font-size : 2.2rem;
+    margin-bottom : 6px;
+    animation : volar 3s ease-in-out infinite;
+
+} .vuelo_etiqueta::after {
+
+    content : '';
+    position : absolute;
+    left : 50%;
+    bottom : 12px;
+    width : 60px;
+    height : 3px;
+    background : white;
+    border-radius : 3px;
+    transform : translateX(-50%);
+    opacity : 0.7;
+
+} .vuelo_form form {
+
+    padding : 30px;
+
+} .vuelo_form .mb-3 {
+
+    margin-bottom : 20px !important;
+
+} .vuelo_form .form-label {
+
+    display : block;
+    margin-bottom : 6px;
+    color : #0b3d91;
+    font-size : 0.85rem;
+    font-weight : 600;
+    text-transform : uppercase;
+    letter-spacing : 0.5px;
+
+} .vuelo_form input, .vuelo_form select, .vuelo_form .form-control, .vuelo_form .form-select {
+
+    width : 100%;
+    padding : 12px 14px;
+    background : #f4f7fc;
+    border : 3px solid #dde5f2;
+    border-radius : 4px;
+    color : #1a1a1a;
+    font-size : 1rem;
+    transition : all 0.25s ease;
+    box-sizing : border-box;  
+
+} .vuelo_form input:hover, .vuelo_form select:hover {
+
+    border-color : #a9c4ee;
+
+} .vuelo_form input:focus, .vuelo_form select:focus {
+
+    outline : none;
+    background : white;
+    border-color : #1e6fd9;
+    box-shadow : 0 0 0 4px rgba(30, 111, 217, .15);
+
+} .vuelo_form input::placeholder {
+
+    color : #9aa8bd;
+
+} .vuelo_form .btn, .vuelo_form button[type = 'submit'] {
+
+    width : 100%;
+    margin-top : 10px;
+    padding : 14px;
+    background : linear-gradient(135deg, #0b3d91 0%, #1e6fd9 100%);
+    border : none;
+    color : white;
+    font-size : 1.05rem;
+    font-weight : 700;
+    letter-spacing : 1px;
+    text-transform : uppercase;
+    cursor : pointer;
+    box-shadow : 0 8px 20px rgba(30, 111, 217, 0.35);
+    transition : transform .2s ease, box-shadow .2s ease;
+
+} .vuelo_form .btn:hover, .vuelo_form button[type = 'submit']:hover {
+
+    transform : translateY(-2px);
+    box-shadow : 0 12px 28px rgba(30, 111, 217, .45);
+
+} .vuelo_form .btn:active, .vuelo_form button[type = 'submit']:active {
+
+    transform : translateY(0);
+    box-shadow : 0 4px 10px rgba(30, 111, 217, .3);
+
+} @keyframes aparecer {
+
+    from {
+
+        opacity : 0;
+        transform : translateY(30px);
+
+    } to {
+
+        opacity : 1;
+        transform : translateY(0);
+
+    }
+
+} @keyframes volar {
+
+    0% {
+
+        transform : translateX(-10px);
+
+    } 50% {
+
+        transform : translateX(10px);
+
+    } 100% {
+
+        transform : translateX(-10px);
+
+    }
+
+} @media ( max-width : 576 ) {
+
+    .vuelo_form {
+
+        margin : 20px 12px;
+        border-radius : 4px;
+
+    } .vuelo_form form {
+
+        padding : 20px;
+
+    } .vuelo_etiqueta {
+
+        font-size : 1.3rem;
+        padding : 22px 20px;
+
+    }
+
+}

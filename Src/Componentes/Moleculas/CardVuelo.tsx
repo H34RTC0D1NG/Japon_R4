@@ -15,36 +15,36 @@ interface CardVueloProp {
 function CardVuelo({ ID, Titulo, Descripcion, Precio, Imagen, Error } : CardVueloProp) {
     return (
         
-        <div className = 'caja container'>
-            <div className = 'card_container'>
-                <div className = 'card_article'>
+        <div className = 'caja_vuelo container'>
+            <div className = 'vuelo_container'>
+                <div className = 'vuelo_article'>
                     <img
                         
                         style = {{ width : '20rem', height : '20rem' }} 
-                        className = 'card_img'
+                        className = 'vuelo_img'
                         src = {Imagen} 
                         alt = {Error} 
                     />
                 </div>
 
-                <div className = 'card_data'>
+                <div className = 'vuelo_data'>
                 
-                    <h1 className = 'card_titulo'> 
+                    <h1 className = 'vuelo_titulo'> 
                         {Titulo} 
                     </h1>
                 
-                    <p className = 'card_descripcion'> 
+                    <p className = 'vuelo_descripcion'> 
                         {Descripcion} 
                     </p>
                 
-                    <p className = 'card_precio'> 
+                    <p className = 'vuelo_precio'> 
                         {Precio} 
                     </p>
                 
                 </div>
 
-                <div className = 'mt-auto'>
-                    <Btn ID = {ID} />
+                <div className = 'vuelo_btn'>
+                    <Btn Texto = 'Reservar Vuelo' Ruta = {`/Vuelo/${ID}`} />
                 </div>
 
             </div>  

@@ -1,0 +1,121 @@
+/* ================= CAJA (cada card) ================= */
+/* 3 por fila, una al lado de otra */
+.caja.container {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(33.33% - 20px);
+    max-width: none;
+    margin: 10px;
+    padding: 0;
+}
+
+/* ================= CARD ================= */
+.card_container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    background: #111111;
+    color: #ffffff;
+    transition: transform .3s, border-color .3s, box-shadow .3s;
+}
+
+.card_container:hover {
+    transform: translateY(-6px);
+    border-color: #8e7fff;
+    box-shadow: 0 12px 30px rgba(142, 127, 255, .25);
+}
+
+/* ================= IMAGEN ================= */
+.card_article {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* !important para ganarle al style del TSX */
+.card_img {
+    display: block;
+    width: 100% !important;
+    height: 180px !important;
+    object-fit: cover;
+    transition: transform .5s;
+}
+
+.card_container:hover .card_img {
+    transform: scale(1.08);
+}
+
+/* ================= TEXTO ================= */
+.card_data {
+    padding: 15px 5px 0;
+}
+
+.card_titulo {
+    margin: 0 0 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+/* Descripcion y precio como etiquetas moradas */
+.card_descripcion,
+.card_precio {
+    display: inline-block;
+    margin: 0 6px 6px 0;
+    padding: 4px 10px;
+    border: 1px solid #8e7fff;
+    border-radius: 12px;
+    background: #ece9ff;
+    color: #4b3fc4;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.card_precio {
+    background: #8e7fff;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/* ================= BOTON ================= */
+.mt-auto {
+    margin-top: auto;
+    padding-top: 10px;
+}
+
+.mt-auto button,
+.mt-auto a {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #2a2a2a;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background .3s;
+}
+
+.mt-auto button:hover,
+.mt-auto a:hover {
+    background: #8e7fff;
+}
+
+/* ================= RESPONSIVE ================= */
+/* Tablet: 2 por fila */
+@media (max-width: 900px) {
+    .caja.container {
+        width: calc(50% - 20px);
+    }
+}
+
+/* Celular: 1 por fila */
+@media (max-width: 600px) {
+    .caja.container {
+        width: calc(100% - 20px);
+    }
+}
