@@ -10,6 +10,7 @@ import Galeria from './Paginas/Galeria'
 import Inicio from './Paginas/Inicio'
 import Vuelo from './Paginas/Vuelo'
 
+import IniciarSession from './Paginas/IniciarSession'
 import Registro from './Paginas/Registro'
 
 import './Css/Global/General.css'
@@ -53,6 +54,11 @@ function App() {
                 <Route 
                     path = '/Registro'
                     element = {<Registro />}
+                />
+
+                <Route 
+                    path = '/IniciarSession'
+                    element = {<IniciarSession />}
                 />
 
             </Routes>

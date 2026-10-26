@@ -1,0 +1,156 @@
+.iniciar_form {
+
+    width : 100%;
+    max-width : 400px;
+    margin : 70px auto;
+    padding : 40px 35px 30px;
+    background : rgba(35, 20, 55, .5);
+    backdrop-filter : blur(16px);
+    -webkit-backdrop-filter : blur(16px);
+    border : 1px solid rgba(255, 255, 255, .18);
+    border-radius : 4px;
+    box-shadow : 0 25px 60px rgba(20, 5, 40, .6);
+    font-family : 'Segoe UI', 'Noto Sans JP', Arial, sans-serif;
+    position : relative;
+    overflow : hidden;
+    animation : subir .7s ease;
+
+} .iniciar_form::after {
+
+    content : '';
+    position : absolute;
+    top : 0;
+    left : 0;
+    width : 100%;
+    height : 4px;
+    background : linear-gradient(90deg, #6a3fa0 0%, #e0607e 50%, #ff194d 100%);
+
+} .iniciar_form::before {
+
+    content : 'ようこそ';
+    display : block;
+    margin-bottom : 6px;
+    color : white;
+    font-size : 1.8rem;
+    font-weight : 700;
+    letter-spacing : 2px;
+    text-align : center;
+    text-shadow : 0 0 20px rgba(255, 169, 77, .6);
+
+}
+
+.iniciar_form .mb-3, .iniciar_form > div {
+
+    margin-bottom : 18px;
+
+} .iniciar_form > div:first-of-type {
+
+    margin-top : 24px;
+
+} .iniciar_form label, .iniciar_form .form-label {
+
+    display : block;
+    margin-bottom : 6px;
+    color : #ffd8b5;
+    font-size : .8rem;
+    font-weight : 600;
+    letter-spacing : 1px;
+    text-transform : uppercase;
+
+} .iniciar_form input, .iniciar_form .form-control {
+
+    width : 100%;
+    padding : 12px 14px;
+    background : rgba(255, 255, 255, .08);
+    border : 1px solid rgba(255, 255, 255, .25);
+    border-radius : 4px;
+    color : white;
+    font-size : 1rem;
+    box-sizing : border-box;
+    transition : all .25s ease;
+
+} .iniciar_form input::placeholder {
+
+    color : rgba(255, 255, 255, .45);
+
+} .iniciar_form input:hover {
+
+    border-color : rgba(255, 255, 255, .45);
+        
+} .iniciar_form input:focus, .iniciar_form .form-control:focus {
+
+    outline : none;
+    background : rgba(255, 255, 255, .14);
+    border-color : #ffa94d;
+    color : white;
+    box-shadow : 0 0 0 4px rgba(255, 169, 77, .25);
+
+} .iniciar_form .btn, .iniciar_form button[type = 'submit'] {
+
+    width : 100%;
+    margin-top : 10px;
+    padding : 13px;
+    background : linear-gradient(135deg, #6a3fa0 0%, #e0607e 55%, #ffa94d 100%);
+    border : none;
+    border-radius : 4px;
+    color : white;
+    font-size : 1.05rem;
+    font-weight : 700;
+    letter-spacing : 2px;
+    text-transform : uppercase;
+    cursor : pointer;
+    box-shadow : 0 8px 22px rgba(224, 96, 126, .45);
+    transition : transform .2s ease, box-shadow .2s ease;
+
+} .iniciar_form .btn:hover, .iniciar_form button[type = 'submit']:hover {
+
+    transform : translateY(-2px);
+    box-shadow : 0 12px 30px rgba(255, 169, 77, .55);
+
+} .iniciar_form .btn:active, .iniciar_form button[type = 'submit']:active {
+
+    transform : translateY(0);
+
+} .iniciar_form > a {
+
+    display : block;
+    margin-top : 20px;
+    color : #ffd8b5;
+    font-size : .9rem;
+    text-align : center;
+    text-decoration : none;
+    transition : color .2s ease;
+
+} .iniciar_form > a:hover {
+
+    color : #ffa94d;
+    text-decoration : none;
+
+} @keyframes subir {
+
+    from {
+
+        opacity : 0;
+        transform : translateY(30px);
+ 
+    } to {
+
+        opacity : 1;
+        transform : translateY(0);
+
+    }
+
+} @media ( max-width : 576px ) {
+
+    .iniciar_form {
+
+        margin : 30px 14px;
+        padding : 32px 22px 24px;
+
+    } .iniciar_form::before {
+
+        font-size : 1.5rem;
+
+    }
+
+}

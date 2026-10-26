@@ -37,7 +37,7 @@ function RegistroForm() {
     }
 
     return (
-        <form onSubmit = {EnvioRegistro} noValidate>
+        <form onSubmit = {EnvioRegistro} noValidate className = 'registro_form'>
             
             <CampoForm 
             
@@ -93,7 +93,7 @@ function RegistroForm() {
                 Registrarse
             </button>
 
-            <Link to = '/Iniciar'>
+            <Link to = '/IniciarSession'>
                 Iniciar Sessión
             </Link>
 

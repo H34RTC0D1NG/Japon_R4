@@ -1,0 +1,11 @@
+.caja_registro_estilo {
+
+    padding : 120px;
+    width : 100%;
+    height : 120vh;
+    background : url('../../../Public/Fondos/Fondo_26.png');
+    background-repeat : no-repeat;
+    background-position : center;
+    background-size : cover;
+
+}
