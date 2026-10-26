@@ -10,6 +10,8 @@ import Galeria from './Paginas/Galeria'
 import Inicio from './Paginas/Inicio'
 import Vuelo from './Paginas/Vuelo'
 
+import Registro from './Paginas/Registro'
+
 import './Css/Global/General.css'
 
 function App() {
@@ -46,6 +48,11 @@ function App() {
                 <Route 
                     path = '/Contacto'
                     element = {<Contacto />}
+                />
+
+                <Route 
+                    path = '/Registro'
+                    element = {<Registro />}
                 />
 
             </Routes>

@@ -7,11 +7,11 @@ import { useState } from 'react'
 
 function VueloForm() {
 
-    const [Nombre, setNombre] = useState('');
-    const [Correo, setCorreo] = useState('');
-    const [Salida, setSalida] = useState('');
-    const [Llegada, setLlegada] = useState('');
-    const [Fecha, setFecha] = useState('');
+    const [Nombre, setNombre]       = useState('');
+    const [Correo, setCorreo]       = useState('');
+    const [Salida, setSalida]       = useState('');
+    const [Llegada, setLlegada]     = useState('');
+    const [Fecha, setFecha]         = useState('');
     const [Pasajeros, setPasajeros] = useState('');
 
     const Envio = ( e : React.SubmitEvent <HTMLFormElement> ) => {

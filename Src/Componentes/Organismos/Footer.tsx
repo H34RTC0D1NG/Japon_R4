@@ -1,3 +1,4 @@
+import { MdOutlineAccountCircle } from 'react-icons/md'
 import '../../Css/Componentes/Footer.css'
 import { Link } from 'react-router-dom'
 import {
@@ -34,6 +35,9 @@ function Footer() {
                         <a href="https://github.com/H34RTC0D1NG" target="_blank">
                             <FaGithub />
                         </a>
+                        <Link to = '/Registro'>
+                            <MdOutlineAccountCircle />
+                        </Link>
                         </div>
                     </div>
 
