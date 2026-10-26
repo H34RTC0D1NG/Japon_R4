@@ -1,8 +1,9 @@
 #Estacion {
 
+    height : 100vh;
     padding : 100px 0;
     scroll-margin-top : 80px;
-    background : url(../../Public/Fondos/Fondo_2.jpg);
+    background : url(../../Public/Fondos/Fondo_23.jpg);
     background-repeat : no-repeat;
     background-size : cover;
 
@@ -10,6 +11,7 @@
 } #Estacion .wrap {
 
     max-width : 1180px;
+    height : 100%;
     margin : 0 auto;
     padding : 0 28px;
 

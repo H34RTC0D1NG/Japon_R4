@@ -1,0 +1,256 @@
+.caja.container {
+
+    width : 100%;
+    max-width : 360px;
+    padding : 0;
+    margin : 0 auto;
+
+} .card_container {
+
+    position : relative;
+    height : 100%;
+    display : flex;
+    flex-direction : column;
+    border-radius : 4px;
+    border : 2px solid transparent;
+    background : 
+        linear-gradient(#140a0d, #140a0d) padding-box,
+        linear-gradient(135deg, crimson, #dc143c, #ff4d6d, crimson) border-box; 
+    background-size : auto, 300%, 300%;
+    box-shadow : 0 20px 45px rgba(0, 0, 0, .5);
+    overflow : hidden;
+    color : #f3e8ea;
+    transition : transform .4s ease, box-shadow .4 ease;
+    animation : vuelo_aparecer .7s ease-out both;
+
+} .card_container:hover {
+
+    transform : translateY(-10px) rotate(-.5deg);
+    box-shadow : 0 30px 60px rgba(220, 20, 60, .4);
+    animation : vuelo_borde 3s linear infinite;
+
+} .card_article {
+
+    position : relative;
+    height : 220px;
+    overflow : hidden;
+
+} .card_article .card_img {
+
+    width : 100% !important;
+    height : 100% !important;
+    object-fit : cover;
+    display : block;
+    transition : transform .8s ease, filter .8s ease;
+
+} .card_container:hover .card_img {
+
+    transform : scale(1.12);
+    filter : saturate(1.25);
+
+} .card_article::after {
+
+    content : '';
+    position : relative;
+    inset : 0;
+    background : linear-gradient(to top, #140a0d 0%, rgba(139, 10, 30, .25) 45%, transparent 70%);
+    pointer-events : none;
+
+} .card_article::before {
+
+    content : 'Vuelo A Japón';
+    position : absolute;
+    top : 14px;
+    left : 14px;
+    z-index : 2;
+    padding : .35rem .8rem;
+    border-radius : 4px;
+    background : rgba(139, 10, 30, .75);
+    backdrop-filter : blur(6px);
+    border : 3px solid rgba(255, 77, 109, .6);
+    font-size : .7rem;
+    font-weight : 700;
+    letter-spacing : .12em;
+    color : white;
+
+} .card_data {
+
+    position : relative;
+    padding : 1.6rem 1.5rem 1rem;
+    display : flex;
+    flex-direction : column;
+    gap : .6rem;
+    flex : 1;
+
+} .card_data::before {
+
+    content : '';
+    position : absolute;
+    top : 0;
+    left : 1.4rem;
+    right : 1.4rem;
+    border-top : 2px dashed rgba(220, 20, 60, .45);
+
+} .card_container::before, .card_container::after {
+
+    content : '';
+    position : absolute;
+    top : 220px;
+    width : 28px;
+    height : 28px;
+    margin-top : -14px;
+    border-radius : 4px;
+    background : #0d0f14;
+    z-index : 3;
+
+} .card_container::before {
+
+    left : -16px;
+
+} .card_container::after {
+
+    right : -16px;
+
+} .card_titulo {
+
+    margin : 0;
+    font-size : 1.5rem;
+    font-weight : 700;
+    line-height : 1.2;
+    color : #fff;
+
+} .card_descripcion {
+
+    margin : 0;
+    font-size : .92rem;
+    line-height : 1.6;
+    color : #b8a1a6;
+    display : -webkit-box;
+    -webkit-line-clamp : 3;
+    -webkit-box-orient : vertical;
+    overflow : hidden;
+
+} .card_precio {
+
+    margin : .4rem 0 0;
+    font-size : 2rem;
+    font-weight : 800;
+    line-height : 1;
+    background : linear-gradient(90deg, #dc143c, #ff4d6d, #ffb3c1);
+    -webkit-background-clip : text;
+    background-clip : text;
+    color : transparent;
+
+} .card_precio::before {
+
+    content : 'Desde';
+    display : block;
+    margin-bottom : .3rem;
+    font-size : .7rem;
+    font-weight : 600;
+    letter-spacing : .15em;
+    color : #b8a1a6;
+    -webkit-text-fill-color : #b8a1a6;
+
+} .card_precio::after {
+
+    content : 'CLP';
+    font-size : .85rem;
+    font-weight : 600;
+    -webkit-text-fill-color : #b8a1a6;
+
+} .card_container .mt-auto {
+
+    margin-top : auto;
+    padding : 0 1.5rem 1.5rem;
+
+} .card_container .mt-auto button, .card_container .mt-auto a, .card_container .mt-auto .btn {
+
+    position : relative;
+    overflow : hidden;
+    display : block;
+    width : 100%;
+    padding : .9rem;
+    border-radius : 5px;
+    background : linear-gradient(90deg, crimson, #dc143c, #ff4d6d);
+    color : white;
+    font-weight : 700;
+    letter-spacing : .04em;
+    text-align : center;
+    text-decoration : none;
+    cursor : pointer;
+    box-shadow : 0 10px 22px rgba(220, 20, 60, .4);
+    transition : transform .2s, filter .3s, box-shadow .3s;
+
+} .card_container .mt-auto button::after, .card_container .mt-auto a::after {
+
+    content : '->';
+    position : absolute;
+    top : 50%;
+    transform : translateY(-50%);
+    font-size : 1.1rem;
+    opacity : 0;
+
+} .card_container .mt-auto button:hover, .card_container .mt-auto a:hover {
+
+    transform : translateY(-2px);
+    filter : brightness(1.15);
+    box-shadow : 0 14px 30px rgba(255, 77, 109, .5);
+
+} .card_container .mt-auto button:hover::after, .card_container .mt-auto a:hover::after {
+
+    animation : vuelo_avion 4s ease;
+
+} @keyframes vuelo_aparecer {
+    
+    from {
+
+        opacity : 0;
+        transform : translateY(30px);
+
+    } to {
+
+        opacity : 1;
+        transform : translateY(0);
+
+    }
+
+} @keyframes vuelo_borde {
+
+    0% {
+
+        background-position : 0 0, 0% 50%;
+
+    } 100% {
+
+        background-position : 0 0, 300% 50%;
+
+    }
+
+} @keyframes vuelo_avion {
+
+    0% {
+
+        left : -2rem;
+        opacity : 1;
+
+    } 100% {
+
+        left : calc(100% + 2rem);
+        opacity : 1;
+
+    }
+
+} @media ( max-width : 400px ) {
+
+    .card_titulo {
+
+        font-size : 1.3rem;
+
+    } .card_precio {
+
+        font-size : 1.7rem;
+
+    }
+
+}

@@ -7,7 +7,7 @@
     justify-content : center;
     color : #F7F3EA;
     overflow : hidden;
-    background : url(../../../Public/Fondos/Fondo_14.jpg);
+    background : url(../../../Public/Fondos/Fondo_17.jpg);
     background-position : center;
     background-repeat : no-repeat;
     background-size : cover;
@@ -23,7 +23,7 @@
     opacity : 0.4;
     line-height : 0.9;
     user-select : none;
-    writing-mode: vertical-rl;
+    writing-mode: vertical-lr;
 
 } .contenido {
 

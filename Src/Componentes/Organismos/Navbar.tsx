@@ -24,8 +24,8 @@ function Navbar() {
                         Gastronomia
                     </Link>
 
-                    <Link className = 'nav-link text-white' to = '/Viajar'>
-                        Viajar
+                    <Link className = 'nav-link text-white' to = '/Vuelo'>
+                        Vuelo
                     </Link>
 
                     <Link className = 'nav-link text-white' to = '/Contacto'>

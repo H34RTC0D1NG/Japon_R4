@@ -1,6 +1,7 @@
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaClock } from 'react-icons/fa'
 import Desplazate from '../Componentes/Atomos/Animaciones/Desplazate'
 import CardContacto from '../Componentes/Moleculas/CardContacto'
+import Cerezo from '../Componentes/Atomos/Animaciones/Cerezo'
 import Formulario from '../Componentes/Organismos/Formulario'
 import { MdContacts } from 'react-icons/md'
 import '../Css/Paginas/Contacto.css' 
@@ -9,6 +10,7 @@ function Contacto() {
     return (
 
         <section className = 'contacto'>
+            <Cerezo />
             <div className = 'wrap contenido_grid'>
                 <div className = 'contenido'>
                     <h1 className = 'titulo_1' style = {{ display: 'inline-block', marginRight: '0.25em'  }}>
@@ -20,26 +22,31 @@ function Contacto() {
                     </p>
 
                     <div className = 'tarjeta_contacto'>
+                        
                         <CardContacto 
                             Icono = {FaEnvelope}
                             Titulo = 'Correo'
                             Detalle = 'isa.mejias@duocuc.cl'
                         />
+                        
                         <CardContacto 
                             Icono = {FaPhone}
                             Titulo = 'Telefono'
                             Detalle = 'Ni En Tu Sueños'
                         />
+                        
                         <CardContacto 
                             Icono = {FaMapMarkerAlt}
                             Titulo = 'Ubicación'
                             Detalle = 'Santiago, Chile - Huechuraba'
                         />
+                        
                         <CardContacto 
                             Icono = {FaClock}
                             Titulo = 'Horario'
                             Detalle = 'Lunes a Sabado'
                         />
+
                     </div>
                 </div>
                 <div className = 'contacto_marco'>

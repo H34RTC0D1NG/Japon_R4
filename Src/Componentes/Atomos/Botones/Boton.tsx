@@ -4,7 +4,7 @@ function Boton() {
     return (
         <button className="btn btn-primary" style = {{ width : '100%' }}>
             <Link to = '/' style = {{ textDecoration : 'none' }}>
-                Más Detalles
+                Más Detalle
             </Link>
         </button>
     )
