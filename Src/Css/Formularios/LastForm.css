@@ -1,0 +1,144 @@
+.last_form {
+
+    width : 100%;
+    max-width : 460px;
+    margin : 70px auto;
+    padding : 40px 35px 30px;
+    background : rgba(20, 10, 5, .6);
+    backdrop-filter : blur(12px);
+    border : 1px solid rgba(255, 140, 60, .3);
+    border-radius : 4px;
+    box-shadow : 0 25px 60px rgba(0, 0, 0, .6), 0 0 40px rgba(232, 80, 20, .25);
+    font-family : 'Segoe UI', 'Noto Sans JP', Arial, sans-serif;
+    position : relative;
+    animation : aparecer_torri .7s ease;
+
+} .last_form::after {
+
+    content : '';
+    position : absolute;
+    top : -10px;
+    left : -14px;
+    right : -14px;
+    height : 14px;
+    background : linear-gradient(180deg, #ff5a1f 0%, #d93a0b 100%);
+    border-top : 4px solid #1a0d07;
+    border-radius : 3px;
+    box-shadow : 0 6px 16px rgba(232, 80, 20, .5);
+
+} .last_form::before {
+
+    content : '⛩ 意見 - Tu Opinión';
+    display : block;
+    margin-bottom : 28px;
+    color : white;
+    font-size : 1.6rem;
+    font-weight : 700;
+    letter-spacing : 2px;
+    text-align : center;
+    text-shadow : 0 0 18px rgba(255, 110, 40, .8);
+
+} .last_form label, .last_form .form-label {
+
+    display : block;
+    margin-bottom : 6px;
+    color : #ffc58a;
+    font-size : .8rem;
+    font-weight : 600;
+    letter-spacing : 1px;
+    text-transform : uppercase;
+
+} .last_form input, .last_form .form-control {
+
+    width : 100%;
+    padding : 12px 14px;
+    background : rgba(255, 255, 255, .07);
+    border-left : 4px solid #e8501a;
+    border-radius : 4px;
+    color : white;
+    font-size : 1rem;
+    box-sizing : border-box;
+    transition : all .25s ease;
+
+} .last_form input::placeholder {
+
+    color : rgba(255, 255, 255, .45);
+
+} .last_form input:hover {
+
+    border-color : rgba(255, 160, 90, .6);
+    border-left-color : #ff6a2b;
+
+} .last_form input:focus, .last_form .form-control:focus {
+
+    outline : none;
+    background : rgba(255, 255, 255, .12);
+    border-color : #ff7a33;
+    color : white;
+    box-shadow : 0 0 0 4px rgba(255, 106, 43, .25);
+
+} .last_form input[type = 'number']::-webkit-inner-spin-button, .last_form input[type = 'number']::-webkit-outer-spin-button {
+
+    opacity : .4;
+    cursor : pointer;
+
+} .last_form .btn, .last_form button[type = 'submit'] {
+
+    width : 100%;
+    margin-top : 12px;
+    background : linear-gradient(135deg, #b8300a 0%, #e8501a 55%, #ff8a3d 100%);
+    border : none;
+    border-bottom : 4px solid #1a0d07;
+    border-radius : 4px;
+    color : white;
+    font-size : 1.05rem;
+    font-weight : 700;
+    letter-spacing : 2px;
+    text-transform : uppercase;
+    cursor : pointer;
+    box-shadow : 0 8px 22px rgba(232, 80, 20, .45);
+    transition : transform .2s ease, box-shadow .2s ease;
+
+} .last_form .btn:hover, .last_form button[type = 'submit']:hover {
+
+    transform : translateY(-2px);
+    box-shadow : 0 12px 30px rgba(255, 120, 50, .6);
+
+} .last_form .btn:active, .last_form button[type = 'submit']:active {
+
+    transform : translateY(0);
+    border-bottom-width : 2px;
+
+} @keyframes aprecer_torii {
+
+    from {
+
+        opacity : 0;
+        transform : translateY(30px);
+
+    } to {
+
+        opacity : 1;
+        transform : translateY(0);
+
+    }
+
+} @media ( max-width : 576px ) {
+
+    .last_form {
+
+        margin : 40px 16px;
+        padding : 32px 22px 24px;
+
+    } .last_form::after {
+
+        left : -8px;
+        right : -8px;
+
+    } .last_form::before {
+
+        font-size : 1.3rem;
+
+    }
+
+}

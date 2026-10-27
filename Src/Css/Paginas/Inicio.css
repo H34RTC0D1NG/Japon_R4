@@ -105,4 +105,13 @@
         min-height : 100svh;
 
     }
+} .inicio_2 {
+
+    width : 100%;
+    height : 100vh;
+    background : url('../../../Public/Fondos/Fondo_20.jpeg');
+    background-position : center;
+    background-size : cover;
+    background-repeat : no-repeat;
+
 }
