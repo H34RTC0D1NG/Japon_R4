@@ -1,0 +1,25 @@
+.admin-font {
+
+    width : 100%;
+    height : 100vh;
+    background : url('../../../Public/Fondos/Fondo_9.jpg');
+    background-position : center;
+    background-size : cover;
+    background-repeat : no-repeat;
+
+} .admin-font {
+    min-height: 100vh;
+    padding: 120px 20px 40px;
+    background: #14101e;
+    color: #ffffff;
+    text-align: center;
+}
+
+.admin-font h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.admin-font p {
+    color: #ffd8b5;
+}

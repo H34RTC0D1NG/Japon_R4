@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 function Gastronomia() {
     return (
-        <button className = 'borde'>
+        <button className = 'borde' style = {{ width : '20%' }}>
             <Link to = '/Gastronomia'>
                 Ver Gastronomia
             </Link>

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 function Explorar() {
     return (
-        <button className = 'btn rojo'>
+        <button className = 'btn rojo' style = {{ width : '20%', padding : '20px' }}>
             <Link to = '/Vuelos'>
                 Empezar a Explorar
             </Link>
