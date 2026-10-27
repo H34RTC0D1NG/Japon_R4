@@ -12,6 +12,7 @@ import Vuelo from './Paginas/Vuelo'
 
 import IniciarSession from './Paginas/IniciarSession'
 import Registro from './Paginas/Registro'
+import Admin from './Paginas/Admin'
 
 import './Css/Global/General.css'
 
@@ -59,6 +60,11 @@ function App() {
                 <Route 
                     path = '/IniciarSession'
                     element = {<IniciarSession />}
+                />
+
+                <Route 
+                    path = '/Admin'
+                    element = {<Admin />}
                 />
 
             </Routes>

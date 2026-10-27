@@ -24,7 +24,7 @@ function IniciarForm() {
             return
         } if (Correo === 'isa.mejias@duocuc.cl' && Pass === 'holamundo') {
             alert('Bienvenido Señor Isam')
-            Navegar('/IniciarSession')
+            Navegar('/Admin')
             return
         } alert('Correo o Contraseña Invalidos')
 
@@ -57,7 +57,7 @@ function IniciarForm() {
                     Iniciar Sessión   
             </button>
 
-            <Link to = '/Registrarse'>
+            <Link to = '/Registro'>
                 Registrarse
             </Link>
 
